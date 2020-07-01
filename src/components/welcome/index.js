@@ -19,7 +19,7 @@ const Welcome = props => {
   useEffect (() => {
     //verifier si connecte ou pas
  let listener= firebase.auth.onAuthStateChanged( user => {
-user ? setUserSession(user) : props.history.push('/');
+user ? setUserSession(user) : props.history.push('/modele');
 }) 
 
 
